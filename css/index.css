@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#start {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+#main_img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border: 4px solid chocolate;
+    border-radius: 15px;
+}
+
+#title {
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+    color: chocolate;
+}
+
+#org_title {
+    margin-top: 0;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: chocolate;
+}
+
+#turn {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+#turn_on {
+    color: #ffe4c4;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d2691e;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+#turn_off {
+    color: #151414;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d2691e;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+#turn_on:hover {
+    transition: all 100ms;
+    outline: 3px solid dimgray;
+}
+
+#turn_off:hover {
+    transition: all 100ms;
+    outline: 3px solid dimgray;
+}
+
+#turn_on:focus-visible {
+    transition: all 100ms;
+    outline: 3px solid darkgrey;
+}
+
+#turn_off:focus-visible {
+    transition: all 100ms;
+    outline: 3px solid darkgrey;
+}
+
+#turn_on:active {
+    transition: all 100ms;
+    background-color: #d75d07;
+    color: #ffffff;
+    outline-color: #1d1b1b;
+}
+
+#turn_off:active {
+    transition: all 100ms;
+    background-color: #d75d07;
+    color: #000000;
+    outline-color: #1d1b1b;
+}
+
+#container_theme {
+    transition: 500ms;
+    padding-bottom: 100px;
+
+}
+
+.dark {
+    background-color: #000000;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: chocolate;
+    height: 400px;
+    flex-basis: 300px;
+    border: 6px double black;
+    border-radius: 14px;
+}
+
+
+.characters {
+    text-align: center;
+}
+
+#nav_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    gap: 40px;
+}
+
+a {
+    font-weight: 600;
+    color: black;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 1420px) {
+    #navigation {
+        position: relative;
+        top: 300px;
+        right: 150px;
+    }
+}
+
+@media (max-width: 1420px) {
+    #turn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 960px) {
+    #start {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    #turn {
+        width: 80%;
+    }
+
+    #navigation {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #main_img {
+        transition: all 200ms;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 634px) {
+    body {
+        position: absolute;
+    }
+}
+
+
+.characters {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 250px;
+    flex-direction: column;
+}
+
+#Rintaro_Okabe, #Itaru_Hasida {
+    text-align: center;
+    display: flex;
+    align-self: center;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 36px;
+}
+
+#Kurisu_Makise, #Mayuri_Sina {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 36px;
+}
+
+.name {
+    color: chocolate;
+    font-size: 35px;
+}
+
+.description {
+    color: chocolate;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#quotes {
+    color: chocolate;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quote_li {
+    text-align: start;
+    color: chocolate;
+    font-style: italic;
+}
+
+.description_img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: 4px solid chocolate;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 200px;
+
+}
+
+#click_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+
+}
+
+
+#click_button {
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: chocolate;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#click_button:hover {
+    transition: all 100ms;
+    outline: 3px solid dimgray;    
+}
+
+#click_button:active {
+    color: #1d1b1b;
+    outline: 4px solid #1d1b1b;
+}
+
+
+#text_clicks {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d2691e;
+}
+
+
+#last_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#begin {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    color: chocolate;
+    margin-top: 100px;
+}
+
+#begin:hover {
+    text-decoration: underline;
+}
